@@ -1,0 +1,83 @@
+body{
+
+background-color: bisque;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+}
+.button{
+  width: 100px;
+  height: 50px;
+  margin-left:0px;
+  margin-top: 10px;
+}
+
+.vinyl-container {
+  flex: 10px; 
+  margin: 10px; /* Spacing between vinyl containers */
+  text-align: center; /* Center align content within each container */
+  font-size: x-small;
+}
+
+.vinyl {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    text-align: center;
+    line-height: 200px;
+    color: #fffefe;
+    position: relative;
+    flex: 1;
+  }
+  
+  .vinyl:hover {
+    transform: scale(1.1);
+  }
+  
+  .vinyl::after {
+    content: attr(data-song);
+    display: block;
+    position: absolute;
+    bottom: -30px; /* Ρυθμίζει την απόσταση του κειμένου από τον δίσκο */
+    width: 100%;
+    left: 0;
+    color:blue;
+  }
+
+
+  #vinyl1 {
+    background-image: url('oasis.jpg');
+    /*center the image*/
+    background-position: center;
+    background-size: 103%;
+  }
+  
+  #vinyl2 {
+    background-image: url('bmth.jpg');
+    background-position: center;
+    background-size: 170%;
+  }
+  
+  #vinyl3 {
+    background-image: url('vinyl.jpg');
+    background-position: center;
+    background-size: 130%;
+  }
+  
+  #vinyl4 {
+    background-image: url('vinyl.jpg');
+    background-position: center;
+    background-size: 130%;
+  }
+  
+  #vinyl5 {
+    background-image: url('vinyl.jpg');
+    background-position: center;
+    background-size: 130%;
+  }

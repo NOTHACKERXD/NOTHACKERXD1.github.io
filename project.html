@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinyl Records</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="vinyl-container">
+      <h1>
+        <div class="vinyl" id="vinyl1" onclick="playSong(1)" ></div>
+        <p>wonderwall-oasis</p>
+      </h1>
+       
+        <button class="button" onclick="pauseAudio(1)">Pause song 1</button>
+    </div>
+
+    <div class="vinyl-container">
+      <h1>
+        <div class="vinyl" id="vinyl2" onclick="playSong(2)" ></div>
+        <p>can you feel my Heart-BMTH</p>
+      </h1>
+        
+        <button class="button" onclick="pauseAudio(2)">Pause song 2</button>
+    </div>
+
+    <div class="vinyl-container">
+<h1>
+  <div class="vinyl" id="vinyl3" onclick="playSong(3)" ></div>
+  <p>Amazing - George Michael</p>
+</h1>
+       
+        <button class="button" onclick="pauseAudio(3)">Pause song 3</button>
+    </div>
+
+    <div class="vinyl-container">
+      <h1>
+        <div class="vinyl" id="vinyl4" onclick="playSong(4)" ></div>
+        <p>My Chemical Romance - Teenagers </p>
+      </h1>
+        
+        <button class="button" onclick="pauseAudio(4)">Pause song 4</button>
+    </div>
+</div>
+  <audio id="audio1" src="Oasis - Wonderwall (Audio).mp3"></audio>
+  <audio id="audio2" src="Bring Me The Horizon - Can You Feel My Heart.mp3"></audio>
+  <audio id="audio3" src="George Michael - Amazing.mp3"></audio>
+  <audio id="audio4" src="My Chemical Romance - Teenagers [Official Music Video] [4K].mp3"></audio>
+
+
+  <script src="project.js"></script>
+
+</body>
+
+</html>
